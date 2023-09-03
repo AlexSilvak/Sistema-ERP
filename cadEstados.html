@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Empresas</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="style.css">
+    <head>
+
+        <title>Cadastro de Estados</title>
+    </head>
+</head>
+<body >
+   
+    <div class="container">
+    <h1 class="text-center">Cadastro de Empresas</h1>
+    <form class="form">
+        <div class="form-group">
+            <label for="codigo">Código</label>
+            <input type="text" id="codigo" class="form-control" required />
+        </div>
+
+        <div class="form-group">
+            <label for="sigla">Sigla</label>
+            <select id="sigla" class="form-control" required>
+                <option value="">Selecione uma Sigla</option>
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="estado">Estado</label>
+            <select id="estado" class="form-control" required>
+                <option value="">Selecione um Estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="aliquota_icms">Alíquota ICMS Interno (%)</label>
+            <input type="number" id="aliquota_icms" class="form-control" min="0" step="0.01" required />
+        </div>
+
+        <div class="form-group">
+            <label for="aliquota_fcp">Alíquota FCP (%)</label>
+            <input type="number" id="aliquota_fcp" class="form-control" min="0" step="0.01" required />
+        </div>
+
+        <button class="btn btn-primary" type="submit">Adicionar</button>
+        <button class="btn btn-warning" type="button">Alterar</button>
+        <button class="btn btn-danger" type="button">Excluir</button>
+       
+    </form>
+    <br>
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Sigla</th>
+                <th>Estado</th>
+                <th>Alíquota ICMS Interno</th>
+                <th>Alíquota FCP</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <!-- Os estados cadastrados serão listados aqui -->
+        </tbody>
+    </table>
+</div   >
+
+</body>
+
+</html>
