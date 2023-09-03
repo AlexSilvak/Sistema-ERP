@@ -67,9 +67,7 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
-      footer{
-        margin-top: 20px;
-      }
+      
     </style>
 
     
@@ -149,18 +147,15 @@
     <ul class="nav nav-pills flex-column mb-auto">
       
       <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+       
+        
         Vendas
       </button>
       <div class="collapse show" id="home-collapse">
         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a href="#" onclick="redirectCadPessoa()" class="link-light d-inline-flex text-decoration-none rounded">Cadastro Cliente</a></li>
-          <li><a href="#" class="link-light d-inline-flex text-decoration-none rounded">Cadastro RCA</a></li>
-          <li><a href="#" class="link-light d-inline-flex text-decoration-none rounded">Cadastro Vendedore</a></li>
-          <li><a href="#" class="link-light d-inline-flex text-decoration-none rounded">Cadastro de Pedidos</a></li>
-          <li><a href="#" class="link-light d-inline-flex text-decoration-none rounded">Relatório de Pedidos por Clientes</a></li>
-          <li><a href="#" class="link-light d-inline-flex text-decoration-none rounded">Relatório de ABC Pedidos</a></li>
-          <li><a href="#" class="link-light d-inline-flex text-decoration-none rounded">Relatório de Pedidos por RCA</a></li>
-          <li><a href="#" class="link-light d-inline-flex text-decoration-none rounded">Relatório de Pedidos por Estados</a></li>
+          <li><a href="#" class="link-light d-inline-flex text-decoration-none rounded">Cadastro usuarios</a></li>
+          <li><a href="#" class="link-light d-inline-flex text-decoration-none rounded">Updates</a></li>
+          <li><a href="#" class="link-light d-inline-flex text-decoration-none rounded">Reports</a></li>
         </ul>
       </div>
       <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#compras-collapse" aria-expanded="false">
@@ -172,8 +167,6 @@
           <li><a href="#" class="link-light d-inline-flex text-decoration-none rounded">Cadastro usuarios</a></li>
           <li><a href="#" class="link-light d-inline-flex text-decoration-none rounded">Updates</a></li>
           <li><a href="#" class="link-light d-inline-flex text-decoration-none rounded">Reports</a></li>
-          <li><a href="#" class="link-light d-inline-flex text-decoration-none rounded">Relatório de Compradores</a></li>
-         
         </ul>
       </div>
       <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#financeiro-collapse" aria-expanded="false">
@@ -212,7 +205,7 @@
         
         
         
-        <li><a class="dropdown-item" href="index.html"><span class="material-symbols-outlined">
+        <li><a class="dropdown-item" href="#"><span class="material-symbols-outlined">
           logout
           </span></a></li>
       </ul>
@@ -223,33 +216,16 @@
 
   
   
-  <iframe src="./dashboard/index.html" height="900" width="1800" title="Iframe Example"></iframe>
+
   
-  
+
   
 
 </main>
-<div class="footer">
-  <footer class="footer">
 
-  </footer>
-</div>
 
     <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
 
       <script src="sidebars.js"></script>
-
-      <script>
-       function redirectCadPessoa(){
-          window.open('./cadCliente.html')
-         }
-        function redirectHome(){
-          window.open('./home.html')
-         }
-        function logout(){
-          
-          window.open('./index.html')
-          }
-      </script>
   </body>
 </html>

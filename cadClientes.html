@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Pessoas  </title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <div class="container">
+    <h1 class="text-center">Cadastro de Pessoas</h1>
+    
+    
+    <form class="form">
+        <div class="form-group">
+            <label for="codigo">Código</label>
+            <input type="text" id="codigo" class="form-control" required />
+        </div>
+
+        <div class="form-group">
+            <label for="tipo_pessoa">Tipo de Pessoa</label>
+            <select id="tipo_pessoa" class="form-control" required>
+                <option value="cliente">Cliente</option>
+                <option value="fornecedor">Fornecedor</option>
+                <option value="rca">RCA</option>
+                <option value="motorista">Motorista</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="tipo_pessoa_juridica_fisica">Pessoa Jurídica ou Física</label>
+            <select id="tipo_pessoa_juridica_fisica" class="form-control" required>
+                <option value="juridica">Jurídica</option>
+                <option value="fisica">Física</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="data_cadastro">Data de Cadastro</label>
+            <input type="date" id="data_cadastro" class="form-control" required />
+        </div>
+
+        <div class="form-group">
+            <label for="data_nascimento">Data de Nascimento</label>
+            <input type="date" id="data_nascimento" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label for="nome_fantasia">Nome Fantasia</label>
+            <input type="text" id="nome_fantasia" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label for="razao_social">Razão Social</label>
+            <input type="text" id="razao_social" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label for="inscricao_estadual">Inscrição Estadual</label>
+            <input type="text" id="inscricao_estadual" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label for="cnpj_cpf">CNPJ/CPF</label>
+            <input type="text" id="cnpj_cpf" class="form-control" required />
+        </div>
+
+        <div class="form-group">
+            <label for="situacao">Situação</label>
+            <select id="situacao" class="form-control" required>
+                <option value="ativa">Ativa</option>
+                <option value="inativa">Inativa</option>
+            </select>
+        </div>
+
+        <!-- Tabela de Endereços -->
+        <h2>Endereços</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>CEP</th>
+                    <th>Estado</th>
+                    <th>Cidade</th>
+                    <th>Logradouro</th>
+                    <th>Número</th>
+                    <th>Bairro</th>
+                    <th>Complemento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Linhas da tabela de endereços aqui -->
+            </tbody>
+        </table>
+
+        <!-- Botão para adicionar endereço -->
+        <button class="btn btn-primary" type="button">Adicionar Endereço</button>
+
+        <!-- Tabela de Contatos -->
+        <h2>Contatos</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Contato</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Linhas da tabela de contatos aqui -->
+            </tbody>
+        </table>
+
+        <!-- Botão para adicionar contato -->
+        <button class="btn btn-primary" type="button">Adicionar Contato</button>
+
+        <!-- Botão para salvar ou atualizar -->
+        <button class="btn btn-success" type="submit">Salvar</button>
+    </form>
+</div   >
+
+</body>
+
+</html>
