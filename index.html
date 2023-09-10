@@ -72,7 +72,7 @@
         -webkit-overflow-scrolling: touch;
 
       }
-
+   
      
     </style>
 
@@ -83,6 +83,7 @@
   <body class="text-center">
     
 <main class="form-signin w-100 m-auto">
+  
   <form>
     <img class="mb-4" src="./assets/logo.jpg" alt="" width="72" height="57">
     <h1 class="h3 mb-3 fw-normal">ERP</h1>
@@ -106,16 +107,17 @@
      
  
   </div>
-  <a href="./home.html"> <button class="w-100 btn btn-lg btn-primary" onclick="login()" type="submit" >Cadastra-se</button></a>
-
+ 
+  <a href="./cadUsuarios.html"  class="w-100 btn btn-lg btn-primary" role="button" aria-pressed="true">Cadastra-se</a>
   </form>
+  
 </main>
 
 <script>
   function login(){
-    // validador email
+    // validador email   
    
-
+   ///<img src="./img/login.png" class="" alt="Responsive image" width="1000" height="935">
   const email = document.getElementById('floatingEmail')
    emailValue = email.value;
    const password= document.getElementById('floatingPassword')
@@ -123,7 +125,7 @@
 
    
    
-   if(emailValue==='root'){
+   if(emailValue==='alex'){
     if(passwordValue==='123'){
       redirectHome()
    }else{
