@@ -9,7 +9,7 @@ function login(){
 
    
    
-   if(emailValue==='alex'){
+   if(emailValue==='root'){
     if(passwordValue==='123'){
       redirectHome()
    }else{
