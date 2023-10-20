@@ -21,7 +21,7 @@ function login(){
  
   }
   function redirectHome(){
-    window.open('./dashboard/index.html')
+    window.open('./home.html')
    }
   function logout(){
     
